@@ -25,10 +25,10 @@ spring:
           uri: lb://credit-service
           predicates:
             - Path=/credit/**
-        - id: document-service
-          uri: lb://document-service
+        - id: evalCredit-service
+          uri: lb://evalCredit-service
           predicates:
-            - Path=/document/**
+            - Path=/evalCredit/**
         - id: simulateCredit-service
           uri: lb://simulateCredit-service
           predicates:
